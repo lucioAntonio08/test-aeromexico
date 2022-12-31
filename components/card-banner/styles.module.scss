@@ -5,7 +5,7 @@
         @apply text-xs
       }
       .text{
-        @apply flex flex-col my-auto max-w-md text-white ml-20;
+        @apply flex flex-col my-auto max-w-md text-white ml-[10%];
         .question{
           @apply text-5xl font-medium mb-3
         }

@@ -1,0 +1,12 @@
+.main{
+  @apply max-w-[230px] my-3 cursor-pointer;
+  .cont{
+    @apply text-[10px];
+    .img{
+     @apply rounded-2xl shadow-xl
+    }
+  }
+  .text{
+    @apply px-3 my-2
+  }
+}

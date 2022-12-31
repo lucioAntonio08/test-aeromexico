@@ -1,0 +1,42 @@
+.main{
+  @apply absolute left-[63%] top-[65%] z-50;
+  .cardUser{
+    @apply flex justify-evenly my-10 px-3;
+    .contUser{
+      @apply font-medium ml-5
+    }
+  }
+  .cardNps{
+    .title{
+      @apply bg-[#031e40] text-white rounded-t-2xl text-left p-1 pl-10 text-[13px]
+    }
+    .contNps{
+      @apply ml-10 mt-4;
+      .number{
+        @apply text-2xl font-bold text-[#031e40]
+      }
+      .update{
+        @apply text-[13px] font-medium text-gray-500
+      }
+      .discover{
+        @apply text-[13px] font-medium text-[#031e40]
+      }
+    }
+  }
+  .flightPlan{
+    .title{
+      @apply bg-[#031e40] text-white rounded-t-2xl text-left p-1 pl-10 text-[13px]
+    }
+    .contFlightPlan{
+      .text{
+        @apply bg-[#315c86] shadow-[#315c65] shadow-inner text-white  text-left p-1 pl-10 text-[13px]
+      }
+      .update{
+        @apply bg-[#031e40] shadow-inner text-gray-300 p-1  text-[10px] text-center border-y
+      }
+      .seeFlight{
+        @apply bg-[#031e40] shadow-inner text-white p-1  text-[11px] rounded-b-2xl text-center
+      }
+    }
+  }
+}

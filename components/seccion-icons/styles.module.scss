@@ -1,0 +1,9 @@
+.main{
+  @apply ml-[10%] max-w-3xl mt-4 mb-14;
+  .title{
+    @apply text-2xl font-medium text-blue-900 my-3
+  }
+  .cont{
+    @apply flex
+  }
+}
