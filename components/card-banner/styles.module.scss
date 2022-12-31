@@ -1,0 +1,19 @@
+ .main{
+      @apply flex bg-[url('https://media.staticontent.com/media/pictures/f8fab17b-4203-4de3-9618-c0d2a741dc4f')]
+      h-60 sm:h-[400px] md:h-[500px] bg-no-repeat mx-auto bg-cover bg-center;
+      .title{
+        @apply text-xs
+      }
+      .text{
+        @apply flex flex-col my-auto max-w-md text-white ml-20;
+        .question{
+          @apply text-5xl font-medium mb-3
+        }
+        .post{
+          @apply font-light max-w-[400px]
+        }
+        .btn{
+          @apply border-gray-400 max-w-[150px] my-3 rounded-2xl
+        }
+      }
+    }
