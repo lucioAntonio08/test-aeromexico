@@ -1,9 +1,9 @@
 .main{
-  @apply bg-[#12c2b1] max-w-2xl ml-[10%] my-10 rounded-2xl shadow-gray-600 drop-shadow-sm;
+  @apply flex bg-[#12c2b1] max-w-[710px] ml-[10%] my-10 rounded-2xl  shadow  shadow-gray-300 min-h-[70px];
   .cont{
-    @apply flex max-w-[550px] p-4 text-[15px] ml-auto text-white;
-    .btn{
-      @apply bg-white text-blue-900 my-auto
-    }
+    @apply max-w-[580px] min-w-[400px] p-4 text-[15px] ml-[20%] text-white my-auto;
+  }
+  .btn{
+    @apply bg-white text-blue-900 my-auto mr-[30%]
   }
 }

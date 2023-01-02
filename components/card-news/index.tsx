@@ -3,16 +3,14 @@ import Image from "next/image";
 import {Text} from "@mantine/core";
 import {quetzalcoatl} from "../../public/statics/images";
 import styles from './styles.module.scss'
+import {CardNewsProps} from "../../interface";
 
-interface CardNewsProps {
-    text: string
-}
 
-const CardNews: FC<CardNewsProps> = ({
-    text
-                                     }) => {
+
+const CardNews: FC<CardNewsProps> = ({text,}) => {
     return (
-        <div className={styles.main}>
+        <div
+            className={styles.main}>
             <div className={styles.cont}>
                 <Image
                     className={styles.img}

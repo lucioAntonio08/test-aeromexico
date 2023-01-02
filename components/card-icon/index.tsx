@@ -1,23 +1,24 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Image from "next/image";
-import {avion} from "../../public/statics/images";
 import {Text} from "@mantine/core";
 import styles from './styles.module.scss'
+import {CardIconProps} from "../../interface";
 
-const CardIcon = () => {
+
+const CardIcon: FC<CardIconProps> = ({name,icon}) => {
     return (
         <div className={styles.main}>
-            <div className={styles.cont} >
+            <div className={styles.cont}>
                 <Image
                     className={styles.img}
                     width={80}
-                    src={avion}
+                    src={icon}
                     alt={'icon-card'}
                 />
-                <Text>Codigo de conducta</Text>
+                <Text>{name}</Text>
             </div>
         </div>
-);
+    );
 };
 
 export default CardIcon;

@@ -4,6 +4,12 @@
     @apply text-2xl font-medium text-blue-900 my-3
   }
   .cont{
-    @apply flex flex-wrap
+    @apply flex flex-wrap;
+    .loader{
+      @apply  mx-auto
+    }
+  }
+  .card{
+    @apply mx-2
   }
 }

@@ -1,9 +1,12 @@
 .main{
-  @apply absolute left-[63%] top-[65%] z-50;
+  @apply absolute left-[880px] top-[400px] 2xl:top-[400px] 2xl:left-[930px] z-50;
+  .loader{
+  @apply mx-auto my-14
+  }
   .cardUser{
-    @apply flex justify-evenly my-10 px-3;
+    @apply flex justify-evenly my-8 px-3 ;
     .contUser{
-      @apply font-medium ml-5
+      @apply font-medium ml-5 my-auto
     }
   }
   .cardNps{

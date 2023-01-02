@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {Carousel} from '@mantine/carousel';
 import styles from './styles.module.scss'
-import CardBanner, {CardBannerProps} from "../card-banner";
+import CardBanner from "../card-banner";
 import axios from "axios";
-import {element} from "prop-types";
+import {CardBannerProps} from "../../interface";
+import {Loader} from "@mantine/core";
 
 
 const BannerAeroMexico = () => {
@@ -14,19 +15,14 @@ const BannerAeroMexico = () => {
         try{
             const {data} = await axios.get('https://dummyjson.com/posts')
             const {posts:arrPosts} = data;
-            const getRandomPost = posts.map(function (arr: any){
-                return arr.body
-            })
             let test = [];
             for (let i = 0; i < 6; i++) {
-
                 test.push(arrPosts[Math.floor(Math.random() * arrPosts.length)])
-
             }
             setPosts(test)
             console.log(test)
         } catch (e:any) {
-
+            console.log(e)
         } finally {
 
         }
@@ -39,7 +35,7 @@ const BannerAeroMexico = () => {
     return (
         <div className={styles.main}>
             {
-                posts.length  &&
+                posts.length  === 0 ? <Loader size="xl" className={styles.loader} /> :
                 <Carousel
                     withControls={false}
                     withIndicators loop >

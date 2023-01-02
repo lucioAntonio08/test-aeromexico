@@ -1,16 +1,10 @@
 import React, {FC} from 'react';
 import {Button, Text} from "@mantine/core";
 import styles from './styles.module.scss'
+import {CardBannerProps} from "../../interface";
 
 
-export interface CardBannerProps {
-    title: string,
-    body: string,
-    id: number,
-    reactions?: string,
-    tags?:number,
-    userId?:number
-}
+
 
 const CardBanner: FC<CardBannerProps>= ({id,title,body}) => {
     return (

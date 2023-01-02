@@ -1,9 +1,7 @@
 import React, {FC} from 'react';
 import styles from './styles.module.scss'
+import {GenericCardProps} from "../../interface";
 
-interface GenericCardProps {
-    children: JSX.Element
-}
 
 
 const GenericCard: FC<GenericCardProps> = ({children})=> {
